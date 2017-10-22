@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Oppenheimer1.github.io/react-githubviewer-app",
   "name": "react-githubviewer-app",
   "version": "0.1.0",
   "private": true,
@@ -9,9 +10,11 @@
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "react-scripts": "0.9.5"
   },
   "scripts": {
+    "deploy" : "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
